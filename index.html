@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="logo-section">
+      <div class="logo-container">
+        <h1>ODIN</h1>
+      </div>
+      <div class="photo-credit">
+        <p>
+          Photo by
+          <a href="https://unsplash.com/@lexilaginess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Lexi Laginess</a
+          >
+          on
+          <a href="https://unsplash.com/photos/a-lamp-post-in-a-garden-nt6N7BS3rPk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="intro-text">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </p>
+        <p>You know you want to.</p>
+      </div>
+
+      <div class="form-container">
+        <p>Let's do this!</p>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirm-password" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Create Account</button>
+        </form>
+      </div>
+
+      <div class="login-link">
+        Already have an account? <a href="#" onclick="handleLogin()">Log in</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
