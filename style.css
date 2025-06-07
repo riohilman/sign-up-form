@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('./Norse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==== Reset & Global ==== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  /* ==== Layout ==== */
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* ==== Left Side (Logo Section) ==== */
+  .logo-section {
+    flex: 1;
+    background: url('lexi-laginess-nt6N7BS3rPk-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .logo-container h1 {
+    font-family: 'Norse', sans-serif;
+    font-size: 5rem;
+    margin-left: 1rem;
+  }
+  
+  .logo-container img {
+    height: 100px;
+  }
+
+  /* ==== Photo Credit ==== */
+  .photo-credit {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+  }
+
+  .photo-credit a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .photo-credit a:hover {
+    color: #f0f0f0;
+  }
+  
+  /* ==== Right Side (Form Section) ==== */
+  .form-section {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .intro-text {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .intro-text p {
+    margin-bottom: 1rem;
+  }
+  
+  /* ==== Form ==== */
+  .form-container {
+    margin-bottom: 2rem;
+  }
+  
+  .form-container p {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* Focus state */
+  input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  /* Invalid state for password fields */
+  input[type="password"]:invalid {
+    border-color: #c53030;
+  }
+  
+  /* Show validation only after user interaction */
+  input[type="password"]:focus:invalid {
+    border-color: #c53030;
+  }
+  
+  /* ==== Button ==== */
+  .btn {
+    padding: 0.8rem 2.5rem;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #4a5b3a;
+  }
+  
+  /* ==== Login link ==== */
+  .login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
